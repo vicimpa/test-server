@@ -1,0 +1,13 @@
+{
+  "name": "test-server",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "esbuild --bundle --platform=node --target=node17 --watch --outfile=dist/main.js main.ts",
+    "start": "nodemon dist/main.js"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "esbuild": "^0.14.11",
+    "nodemon": "^2.0.15"
+  }
+}
